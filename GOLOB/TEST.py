@@ -1,12 +1,8 @@
-import random
+from random import randint
 
-N: list = [random.randint(1, 100) for num in range(100)]
+a: int = int(input("vnesi število a: "))
+b: int = int(input("vnesi število b: "))
 
-z: int = int(input("vnesi stevilo: "))
+N: list = [randint(a, b) for x in range(2000)]
 
-y: int = len([num for num in N if num == z])
-
-if y == 0:
-    print(f"ni števila {z}")
-else:
-    print(f"število {z} se pojavi {y} krat")
+print(N)
