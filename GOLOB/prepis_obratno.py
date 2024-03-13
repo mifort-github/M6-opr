@@ -8,7 +8,7 @@ niz1: str = "ghiagffauilgfauč.ghoagfiual"
 def prepis(niz):
     niz2: str = ""
 
-    for x in niz1:
+    for x in niz:
         niz2 = x + niz2
 
     return niz2
